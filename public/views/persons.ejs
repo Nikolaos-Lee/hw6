@@ -1,0 +1,28 @@
+<h1 id="text-Hunting">Hunting</h1>
+
+<% if (userinfos.length) { %>
+  <div class="container">
+    <div class="row centered">
+    <% userinfos.forEach(function(userinfo){ %>
+      <!-- userinfos data import and each as userinfo use -->
+    <div class="col-lg-3 hunting-list">
+
+
+<!-- name section -->
+        <div class='name'>
+          <h3><%= userinfo['title'] %></h3>
+
+          <img  class="img-cirpic img-responsive" src="../image/blackman.jpg" >
+          <h3>$<%= userinfo['reward'] %></h3>
+          <p class="crime">罪行：<%= userinfo['content'] %></p>
+
+        </div>
+<!-- name end -->
+
+
+
+    </div>
+    <% }) %>
+    </div>
+  </div>
+<% } %>

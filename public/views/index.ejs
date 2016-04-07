@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>數位通緝榜</title>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/ejs_production.js"></script>
+</head>
+
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top" role=navigation>
+		<div class=container>
+			<div class=navbar-header>
+				<button type=button class="navbar-toggle collapsed" data-toggle=collapse data-target=#navbar aria-expanded=false aria-controls=navbar>
+					 <span class=sr-only>Toggle navigation</span> <span class=icon-bar></span>
+					<span class=icon-bar></span> <span class=icon-bar></span> </button>
+				 <a class=navbar-brand href=#>數位通緝榜</a></div>
+			<div id=navbar class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li class=active><a href=#>Home</a>
+						<li><a href=#about>About</a>
+							<li><a href=#contact>Contact</a>
+								<li class=dropdown><a href=# class=dropdown-toggle data-toggle=dropdown role=button aria-expanded=false>Dropdown <span class=caret></span></a>
+									<ul class=dropdown-menu role=menu>
+										<li><a href=#>Action</a>
+											<li><a href=#>Another action</a>
+												<li><a href=#>Something else here</a>
+													<li class=divider>
+														<li class=dropdown-header>Nav header
+															<li><a href=#>Separated link</a>
+																<li><a href=#>One more separated link</a></ul>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href=#>lala </a>
+						<li><a href=#>lalala</a>
+							<li class=active><a href=#>Fixed top<span class=sr-only>(current)</span></a></ul>
+			</div>
+		</div>
+	</nav>
+<!-- nav  end -->
+
+<!-- main content -->
+	<div class="containerm mb ">
+		<div class="row centered pd-top bkg-md">
+			<!-- Visible only on small devices -->
+			<div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+				<div id="usernew">
+					<%- include('form'); %>
+				</div>
+			</div>
+			<!-- end jumbotron -->
+		</div>
+		<!-- end myJumbotron-->
+<!-- main content end -->
+
+		<div class="row centered">
+			<!-- Visible only on small devices -->
+			<div class="col-md-12">
+				<div id="userinfo">
+					<%- include('persons'); %>
+				</div>
+			</div>
+		</div>
+		<div div="row centered">
+			<div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+				<div id="userupdate"></div>
+			</div>
+		</div>
+	</div>
+	<!-- end jumbotron -->
+
+	<!-- Button trigger modal -->
+
+
+
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
